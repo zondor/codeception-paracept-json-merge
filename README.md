@@ -6,7 +6,7 @@ Uses https://github.com/zondor/codeception-json-reporter
 ## Installation
 
 1. Install [Codeception](http://codeception.com) via Composer
-2. Add  `codeception-paracept-json-merge": "*"` to your `composer.json`
+2. Add  `"zondor/codeception-paracept-json-merge": "~1.0"` to your `composer.json`
 3. Run `composer install`.
 4. Edit your Robo.php file
 
