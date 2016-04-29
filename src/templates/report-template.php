@@ -87,8 +87,11 @@ function getColor($status)
                     <a data-toggle="collapse"
                        class="pull-left clickable glyphicon glyphicon-th-large suite-collapse" href="#Link">
                     </a>
-
-                    <?= $suite['name'] ?> : <span class="badge"><?= count($suite['scenarios']) ?>
+                    <?php
+                    //TODO quickFix , need to move it into Class JsonReportParser
+                    $suiteName = (is_array($suite['name']))? current($suite['name']) : $suite['name'];
+                    ?>
+                    <?= $suiteName ?> : <span class="badge"><?= count($suite['scenarios']) ?>
                         scenarios</span>
                 </h3>
             </div>
